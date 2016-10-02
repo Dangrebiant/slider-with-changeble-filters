@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="blurContainer">
+        <div id="sliderContainer">
+            <ul class="slides">
+
+        </div>
+        <div class="btn">
+            <button type="button" class="buttons" id="previousBtn">previous</button>
+            <button type="button" class="buttons" id="nextBtn">next</button>
+            </ul>
+        </div>
+    </div>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="blurSlider_plugin.js"></script>
+    <script>
+        $("#sliderContainer").sliderPlug({
+            filter: "grayscale(80%)" //any CSS3 filter may be applied:"grayscale(100%)", "invert(100%)", "blur(5px)", "saturate(8)", "sepia(100%)", "none", etc.
+        })
+    </script>
+
+</body>
+
+
+</html>
